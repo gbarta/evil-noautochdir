@@ -12,14 +12,14 @@ Unfortunately, emacs changes the default-directory variable in a manner very
 similar to autochdir.
 
 This plugin provides an Evil implementation of the default Vim directory
-behaviour, "set noautochdir". It only affects Evil ex commands like :e and :new
-while other emacs functionality remains unaffected.
+behaviour, "set noautochdir". It only affects Evil ex commands while other emacs
+functionality remains unaffected.
 
-The plugin provides the following ex-style commands for directly interacting with the
-current directory:
+The plugin provides the following ex-style commands for directly interacting with
+the current directory:
 
 *   :cd
 *   :pwd
 
 You can see the difference between the emacs default directory and the Evil
-current directly by contrasting the different values returned by :pwd and M-x pwd.
+current directory by contrasting the different values returned by :pwd and M-x pwd.
