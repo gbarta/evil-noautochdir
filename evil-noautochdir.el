@@ -13,7 +13,7 @@
    ;; only due to an implementation detail.
    ;; By overriding default-directory with a scoped variable,
    ;; all of the evil and minibuffer and completion code will
-   ;; get the directory we have set to emilate noautochdir.
+   ;; get the directory we have set to emulate noautochdir.
    ;; However, if emacs sets the variable e.g. as part of
    ;; find-file, it will change the real buffer-local value
    ;; and not this temporary value, keeping normal emacs
