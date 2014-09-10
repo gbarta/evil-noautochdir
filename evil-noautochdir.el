@@ -1,4 +1,5 @@
-(defvar evil-cwd default-directory)
+(defvar evil-cwd default-directory
+  "Current working directory for issuing ex commands.")
 
 (defmacro with-evil-cwd (&rest body)
   `(let ((default-directory evil-cwd))
@@ -19,18 +20,21 @@
    ;; behaviour of default-directory!
    ad-do-it))
 
-(evil-define-command evil-cd (count dir)
+(evil-define-command evil-cd (dir)
   "Change directory."
-  :repeat nil
-  (interactive "P<f>")
-  (if dir
-      (setq evil-cwd (expand-file-name dir)))
-  (message evil-cwd))
+  (interactive "<f>")
+  (when (not dir)
+    (setq dir "~"))
+  (if (file-directory-p dir)
+      (progn
+        (setq evil-cwd (expand-file-name dir))
+        (message evil-cwd))
+    (error "Can't find directory %s in path" dir)))
 (evil-ex-define-cmd "cd" 'evil-cd)
 
-(evil-define-command evil-pwd ()
+(defun evil-pwd ()
   "Print current directory."
-  :repeat nil
+  (interactive)
   (message evil-cwd))
 (evil-ex-define-cmd "pwd" 'evil-pwd)
 
