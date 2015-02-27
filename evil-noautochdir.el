@@ -6,6 +6,7 @@
 ;; Keywords: evil
 ;; Created: 27th Feb 2015
 ;; Version: 0.1.20150227
+;; URL: https://github.com/gbarta/evil-noautochdir
 
 ;; The MIT License (MIT)
 ;;
