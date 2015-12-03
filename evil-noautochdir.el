@@ -5,7 +5,7 @@
 ;; Author: Gabriel Barta <gbarta@gabrielbarta.com>
 ;; Keywords: evil
 ;; Created: 27th Feb 2015
-;; Version: 0.1.20150227
+;; Version: 0.1.20151203
 ;; URL: https://github.com/gbarta/evil-noautochdir
 
 ;; The MIT License (MIT)
@@ -36,6 +36,8 @@
 ;; to control the current directory.
 
 ;;; Code:
+
+(require 'evil)
 
 (defvar evil-cwd default-directory
   "Current working directory for issuing ex commands.")
