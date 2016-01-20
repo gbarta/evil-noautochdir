@@ -1,12 +1,12 @@
-;;; evil-noautochdir.el -- equivalent to set noautochdir for evil
+;;; evil-noautochdir.el --- equivalent to set noautochdir for evil
 
-;; Copyright (C) 2014,2015 Gabriel Barta
+;; Copyright (C) 2014-2016 Gabriel Barta
 
 ;; Author: Gabriel Barta <gbarta@gabrielbarta.com>
 ;; Keywords: evil
+;; Homepage: https://github.com/gbarta/evil-noautochdir
 ;; Created: 27th Feb 2015
-;; Version: 0.1.20151203
-;; URL: https://github.com/gbarta/evil-noautochdir
+;; Version: 0.2
 
 ;; The MIT License (MIT)
 ;;
