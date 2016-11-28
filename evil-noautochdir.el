@@ -3,10 +3,11 @@
 ;; Copyright (C) 2014-2016 Gabriel Barta
 
 ;; Author: Gabriel Barta <gbarta@gabrielbarta.com>
+;; Package-Requires: ((evil "1.2.3"))
 ;; Keywords: evil
 ;; Homepage: https://github.com/gbarta/evil-noautochdir
 ;; Created: 27th Feb 2015
-;; Version: 0.2
+;; Version: 0.2.1
 
 ;; The MIT License (MIT)
 ;;
